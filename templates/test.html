@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='test.js') }}"></script>
+</head>
+
+
+<body>
+    
+
+    <h1>Premier Site</h1>
+    <h2>Paragraphe 1</h2>
+    <p class="introduction">
+        Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit. <br /> <span class="salutations">Nullam
+            eleifend venenatis</span> nisi dapibus viverra. Vivamus posuere id tortor egestas tempor.
+    </p>
+    <p id="mon_ancre">C'est ici qu'on revient</p>
+
+    <form>
+        <input id="txt" type="text">
+        <input type="button" onclick="save();">
+    </form>
+
+
+    <h2>Paragraphe 2</h2>
+    <p>
+        Nullam a nunc in sem <strong>pharetra cursus</strong>. Nunc tincidunt sodales velit in imperdiet. Sed iaculis
+        <mark>consequat dui iaculis</mark> posuere. Praesent eleifend pellentsque gravida.
+    </p>
+    <p>
+        Phasellus ut vestibulum ligula. Donec euismod volutpat vestibulum. Aliquam erat volutpat. Sed dapibus sem et est
+        fermentum ultrices. Fusce scelerisque interdum semper. Suspendisse vitae ultrices urna, sed rutrum eros. Integer
+        ultrices urna nec aliquet tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
+        ridiculus mus. Nunc tempor lobortis nulla ac bibendum.
+    </p>
+</body>
+
+</html>

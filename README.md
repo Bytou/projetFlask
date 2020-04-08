@@ -1,1 +1,4 @@
-## Exemple d'un projet avec Flask
+# Exemple d'un projet avec Flask
+
+## 1. Installations
+

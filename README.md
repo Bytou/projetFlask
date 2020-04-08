@@ -2,9 +2,9 @@
 
 ## I. Installations
 
-### A. Côté serveur
+###     A. Côté serveur
 
-#### 1. Python 
+####        1. Python 
 
 Pour l'instalation de Python, c'est mieux de l'installer en global sur la machine. Je l'avais pas fait au début, et j'ai eu des problèmes d'imports de modules (Flask, psycopg2, ...). Pour ça faut juste modifier les paramètres d'installations quand vous lancez le .exe, sélectionnez "installer pour tous les utilisateurs". 
 

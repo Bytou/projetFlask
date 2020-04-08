@@ -2,9 +2,9 @@
 
 ## I. Installations
 
-###     A. Côté serveur
+### A. Côté serveur
 
-####        1. Python 
+#### 1. Python 
 
 Pour l'instalation de Python, c'est mieux de l'installer en global sur la machine. Je l'avais pas fait au début, et j'ai eu des problèmes d'imports de modules (Flask, psycopg2, ...). Pour ça faut juste modifier les paramètres d'installations quand vous lancez le .exe, sélectionnez "installer pour tous les utilisateurs". 
 
@@ -38,11 +38,8 @@ J'ai prit VueJS comme exemple mais on peut très bien utiliser autre chose, comm
 
 jQuery est l'outil qui va nous permettre de faire des requètes entre le côté client et le côté serveur, avec des requètes AJAX notemment. 
 Pour l'installer, deux manières encore : 
-- insérer une balise script dans le .html `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>`. 
+- insérer une balise script dans le .html `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>`. (ce que j'ai utilisé dans l'exemple)
 - l'installer en local via un fichier .exe qu'on peut télécharger ici : https://sutterlity.gitbooks.io/apprendre-jquery/content/installation/index.html
 
-
-
-
- 
+## II. L'exemple 
 

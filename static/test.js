@@ -8,10 +8,12 @@ function save(){
         },
         type: 'POST',
         success: function (a) {
-            console.log(a)
+            console.log("Nom sauvegardé"+a)
+            document.getElementById("txt").value = ''
         },
         error: function (a, status, error) {
             console.log('Erreur : ' + error + '\nStatus : ' + status)
         }
     })
 }
+

@@ -14,31 +14,22 @@
 <body>
     
 
-    <h1>Premier Site</h1>
-    <h2>Paragraphe 1</h2>
-    <p class="introduction">
-        Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit. <br /> <span class="salutations">Nullam
-            eleifend venenatis</span> nisi dapibus viverra. Vivamus posuere id tortor egestas tempor.
-    </p>
-    <p id="mon_ancre">C'est ici qu'on revient</p>
+    <h1 style="text-align: center;">Exemple de l'utilisation de Flask</h1>
 
-    <form>
-        <input id="txt" type="text">
-        <input type="button" onclick="save();">
+
+    <h2>Envoi de donnés </h2>
+    <form id="sendData"> 
+        <label for="nom">Entréer un nom :</label>
+        <input id="txt" name="nom" type="text">
+        <input type="button" onclick="save();" value="Envoyer">
     </form>
 
+    <br/>
 
-    <h2>Paragraphe 2</h2>
-    <p>
-        Nullam a nunc in sem <strong>pharetra cursus</strong>. Nunc tincidunt sodales velit in imperdiet. Sed iaculis
-        <mark>consequat dui iaculis</mark> posuere. Praesent eleifend pellentsque gravida.
-    </p>
-    <p>
-        Phasellus ut vestibulum ligula. Donec euismod volutpat vestibulum. Aliquam erat volutpat. Sed dapibus sem et est
-        fermentum ultrices. Fusce scelerisque interdum semper. Suspendisse vitae ultrices urna, sed rutrum eros. Integer
-        ultrices urna nec aliquet tincidunt. Orci varius natoque penatibus et magnis dis parturient montes, nascetur
-        ridiculus mus. Nunc tempor lobortis nulla ac bibendum.
-    </p>
+    <h2>Récupérer des donnés</h2>
+    <form id="getData">
+        <input type="button" value="Récupérer">
+    </form>
 </body>
 
 </html>

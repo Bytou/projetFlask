@@ -6,7 +6,7 @@ app = Flask(__name__)
 con = psycopg2.connect(database='Test',
                        user='postgres',
                        host='localhost',
-                       password='986237',
+                       password='basket',
                        port='5432')
 
 cur = con.cursor()

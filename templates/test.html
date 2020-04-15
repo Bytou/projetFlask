@@ -22,13 +22,17 @@
         <label for="nom">Entréer un nom :</label>
         <input id="txt" name="nom" type="text">
         <input type="button" onclick="save();" value="Envoyer">
+        <p id="saveok"></p>
     </form>
 
     <br/>
 
     <h2>Récupérer des donnés</h2>
     <form id="getData">
-        <input type="button" value="Récupérer">
+        <input type="button" value="Récupérer" onclick="get()">
+        <div id="data">
+
+        </div>
     </form>
 </body>
 

@@ -26,7 +26,7 @@ Pareil qu'au dessus, dans un terminal il suffit d'entrer `pip install Flask`
 
 Pour le côté client, on utilise Node.JS qui est une plateforme logicielle à partir de laquelle on va installer VueJS. Pour ça, il suffit de télécharger le fichier .msi et de l'executer. 
 
-##### 1. VueJS
+##### a. VueJS
 
 VueJS c'est un framework JavaScript qui va permettre la gestion du côté client. Il va notemment servir à faciliter la gestion des donnés dans l'HTML et dans le JS, mais aussi faire des véirfs de syntaxe ou autre. Vous pouvez : 
 - soit inclure cette balise script dans un fichier html : ``<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>`

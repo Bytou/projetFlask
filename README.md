@@ -50,6 +50,6 @@ Avant toute chose, il faut créer la BDD. Pour ça, il faut aller sur pgAdmin et
 ### B. Le reste xD
 
 Une fois que vous avez installer tous les ptits modules et mis en place la BDD, vous pouvez ouvrir une console dans le dossier et taper un classique `python test.py`. Si tout se passe bien, vous devriez avoir ça : 
-![40% center](images/console.png)
+![GitHub Logo](/images/console.png)
 
 

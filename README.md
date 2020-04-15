@@ -49,7 +49,7 @@ Avant toute chose, il faut créer la BDD. Pour ça, il faut aller sur pgAdmin et
 
 ### B. Le reste xD
 
-Une fois que vous avez installer tous les ptits modules et mis en place la BDD, vous pouvez ouvrir une console dans le dossier et taper un classique `python test.py`. Si tout se passe bien, vous devriez avoir ça : 
-![GitHub Logo](/images/console.png)
+Une fois que vous avez installer tous les ptits modules et mis en place la BDD, vous pouvez ouvrir une console dans le dossier et taper un classique `python test.py`. Si tout se passe bien, vous devriez avoir quelque chose comme sur la photo (dans le dossier images, j'ai eu la flemme de l'inclure dedans xD). 
+![alt text](https://github.com/Bytou/projetFlask/blob/master/images/console.PNG)
 
 

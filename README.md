@@ -43,3 +43,13 @@ Pour l'installer, deux manières encore :
 
 ## II. L'exemple 
 
+### A. La BDD
+
+Avant toute chose, il faut créer la BDD. Pour ça, il faut aller sur pgAdmin et créer un serveur. Une fois cela fait, vous pouvez exécuter le script nommé "databaseTest.sql" en allant sur "Query tool". Une fois exécuté et qu'il vous dit que tout va bien, vous pouvez tester en entrant un ptit `SELECT * FROM 'Test'` et vous devriez avoir deux colones qui s'affichent, une Id et une Nom. 
+
+### B. Le reste xD
+
+Une fois que vous avez installer tous les ptits modules et mis en place la BDD, vous pouvez ouvrir une console dans le dossier et taper un classique `python test.py`. Si tout se passe bien, vous devriez avoir ça : 
+![40% center](images/console.png)
+
+

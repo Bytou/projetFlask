@@ -57,9 +57,9 @@ Ensuite, il vous suffit d'aller sur l'URL de la dernière ligne, qui doit être 
 
 > Dans le test.py, faites bien attention à entrer votre nom d'utilisateur et votre mot de passe pour la database de pgAdmin4 ici : 
 > ```python 
-con = psycopg2.connect(database='Test',
-                       user='postgres',
-                       host='localhost',
-                       password='basket',
-                       port='5432')
-``` 
+>con = psycopg2.connect(database='Test',
+>                       user='postgres',
+>                       host='localhost',
+>                       password='basket',
+>                       port='5432')
+>``` 

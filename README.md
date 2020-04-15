@@ -26,7 +26,7 @@ Pareil qu'au dessus, dans un terminal il suffit d'entrer `pip install Flask`
 
 Pour le côté client, on utilise Node.JS qui est une plateforme logicielle à partir de laquelle on va installer VueJS. Pour ça, il suffit de télécharger le fichier .msi et de l'executer. 
 
-##### a. VueJS
+##### a. VueJS (pas encore dans l'exemple)
 
 VueJS c'est un framework JavaScript qui va permettre la gestion du côté client. Il va notemment servir à faciliter la gestion des donnés dans l'HTML et dans le JS, mais aussi faire des véirfs de syntaxe ou autre. Vous pouvez : 
 - soit inclure cette balise script dans un fichier html : ``<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>`
@@ -53,13 +53,17 @@ Une fois que vous avez installer tous les ptits modules et mis en place la BDD, 
 
 ![alt text](https://github.com/Bytou/projetFlask/blob/master/images/console.PNG)
 
-Ensuite, il vous suffit d'aller sur l'URL de la dernière ligne, qui doit être http://127.0.0.5:5000/ 
+Ensuite, il vous suffit d'aller sur l'URL de la dernière ligne, qui doit être http://127.0.0.1:5000/ 
 
 > Dans le test.py, faites bien attention à entrer votre nom d'utilisateur et votre mot de passe pour la database de pgAdmin4 ici : 
 > ```python 
 >con = psycopg2.connect(database='Test',
->                       user='postgres',
+>                       user='postgres', 
 >                       host='localhost',
 >                       password='basket',
 >                       port='5432')
 >``` 
+
+Si vous êtes sur VS Code je peux vous aider pour le débugage vu que je suis avec VS Code. 
+
+L'appli fais quelque chose de très simple : enregistrer un nom dans un table et retourner tous les noms enregistrés. Vu que votre table est vide au début, il faut que vous ajoutiez un ou deux noms, puis après demander toutes les entrées de la table. 

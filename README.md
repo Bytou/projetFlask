@@ -49,7 +49,17 @@ Avant toute chose, il faut créer la BDD. Pour ça, il faut aller sur pgAdmin et
 
 ### B. Le reste xD
 
-Une fois que vous avez installer tous les ptits modules et mis en place la BDD, vous pouvez ouvrir une console dans le dossier et taper un classique `python test.py`. Si tout se passe bien, vous devriez avoir quelque chose comme sur la photo (dans le dossier images, j'ai eu la flemme de l'inclure dedans xD). 
+Une fois que vous avez installer tous les ptits modules et mis en place la BDD, vous pouvez ouvrir une console dans le dossier et taper un classique `python test.py`. Si tout se passe bien, vous devriez avoir quelque chose comme ça :
+
 ![alt text](https://github.com/Bytou/projetFlask/blob/master/images/console.PNG)
 
+Ensuite, il vous suffit d'aller sur l'URL de la dernière ligne, qui doit être http://127.0.0.5:5000/ 
 
+> Dans le test.py, faites bien attention à entrer votre nom d'utilisateur et votre mot de passe pour la database de pgAdmin4 ici : 
+> ```python 
+con = psycopg2.connect(database='Test',
+                       user='postgres',
+                       host='localhost',
+                       password='basket',
+                       port='5432')
+``` 

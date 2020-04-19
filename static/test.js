@@ -1,3 +1,22 @@
+function save(){
+    let a = document.getElementById("txt").value
+    console.log(a)
+    $.ajax({
+        url: '/sendData',
+        data: {
+            'test': a,
+        },
+        type: 'POST',
+        success: function (a) {
+            console.log("Nom sauvegardé")
+            document.getElementById("saveok").innerHTML = "Nom "+a+" sauvegardé"
+            document.getElementById("txt").value = ''
+        },
+        error: function (a, status, error) {
+            console.log('Erreur : ' + error + '\nStatus : ' + status)
+        }
+    })
+}
 
 //Définition de la classe Personne, plus simple pour l'affichage 
 function Personne(id, name){
@@ -17,59 +36,24 @@ function convPers(listPers){
     return list;
 }
 
-var vm = new Vue({
-    el: '#app',
-    delimiters: ['[[', ']]'],
-    data: {
-        personnes: []
-    },
- 
-
-    methods : {
-        save: function() {
-            let a = document.getElementById("txt").value
-            console.log(a)
-            $.ajax({
-                url: '/sendData',
-                data: {
-                    'test': a,
-                },
-                type: 'POST',
-                success: function (a) {
-                    console.log("Nom sauvegardé")
-                    document.getElementById("saveok").innerHTML = "Nom "+a+" sauvegardé"
-                    document.getElementById("txt").value = ''
-                },
-                error: function (a, status, error) {
-                    console.log('Erreur : ' + error + '\nStatus : ' + status)
-                }
+//Récup des donnés 
+function get(){
+    $.ajax({
+        url: '/getData',
+        type: 'POST',
+        success: function(a){
+            console.log("Succès ! \n")
+            
+            //Conversion des données récupérés en données plus simple à gérer et affichage 
+            var listePers = convPers(a)
+            document.getElementById('data').innerHTML = ""
+            listePers.forEach(element => {
+                document.getElementById('data').append('Id : '+element.Id+', nom : '+element.Name+'|| ')
             })
-        }, 
-
-
-        get: function() {
-            let vue = this
-            $.ajax({
-                url: '/getData',
-                type: 'POST',
-                success: function(a){
-                    console.log("Succès ! \n")
-                    
-                    //Conversion des données récupérés en données plus simple à gérer et affichage 
-                    var listePers = convPers(a)
-                    vue.requ = true
-                    vue.personnes = listePers
-                    console.log(vue.personnes)
-                },
-                error : function(a, status, error){
-                    console.log('Erreur : ' + error + '\nStatus : ' + status)
-                }
-            })
+            console.log(listePers)
+        },
+        error : function(a, status, error){
+            console.log('Erreur : ' + error + '\nStatus : ' + status)
         }
-
-    },
-
-    created : function(){
-        this.get()
-    }   
-})
+    })
+}

@@ -67,3 +67,7 @@ Ensuite, il vous suffit d'aller sur l'URL de la dernière ligne, qui doit être 
 Si vous êtes sur VS Code je peux vous aider pour le débugage vu que je suis avec VS Code. 
 
 L'appli fais quelque chose de très simple : enregistrer un nom dans un table et retourner tous les noms enregistrés. Vu que votre table est vide au début, il faut que vous ajoutiez un ou deux noms, puis après demander toutes les entrées de la table. 
+
+### C. VueJS
+
+Dans la MàJ que je viens d'update, je crois que pour que ça marche il faut faire `npm run` dans une console dans le 

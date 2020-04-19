@@ -4,36 +4,39 @@
 
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <title>Test</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='test.js') }}"></script>
+
 </head>
 
 
 <body>
-    
+    <div id="app">
+        <h1 style="text-align: center;">Exemple de l'utilisation de Flask</h1>
 
-    <h1 style="text-align: center;">Exemple de l'utilisation de Flask</h1>
 
+        <h2>Envoi de donnés </h2>
+        <form id="sendData">
+            <label for="nom">Entréer un nom :</label>
+            <input id="txt" name="nom" type="text">
+            <input type="button" v-on:click="save" value="Envoyer">
+            <p id="saveok"></p>
+        </form>
 
-    <h2>Envoi de donnés </h2>
-    <form id="sendData"> 
-        <label for="nom">Entréer un nom :</label>
-        <input id="txt" name="nom" type="text">
-        <input type="button" onclick="save();" value="Envoyer">
-        <p id="saveok"></p>
-    </form>
+        <br/>
 
-    <br/>
-
-    <h2>Récupérer des donnés</h2>
-    <form id="getData">
-        <input type="button" value="Récupérer" onclick="get()">
-        <div id="data">
-
+        <h2>Récupérer des donnés</h2>
+        <form id="getData">
+            <input type="button" value="Récupérer" v-on:click='get'>
+        </form>
+        <div v-for="p in personnes">
+            <p>[[ p.Id ]] & [[ p.Name ]]</p>
         </div>
-    </form>
+    </div>
+    <script type="text/javascript" src="./static/test.js"></script>
+
 </body>
 
 </html>

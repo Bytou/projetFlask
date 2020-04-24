@@ -70,4 +70,5 @@ L'appli fais quelque chose de très simple : enregistrer un nom dans un table et
 
 ### C. VueJS
 
-Dans la MàJ que je viens d'update, je crois que pour que ça marche il faut faire `npm run` dans une console dans le 
+VueJS va nous permettre de faciliter le passage de donnés et l'appel de méthode. Par exemple, dans le HTML, et pour afficher l'ID et le Nom enregistré, on utilise des balise '[[ ]]'. définis ligne 22 du .js.
+De plus, pour la récupération de donnés au lancement de la page, on appelle la méthode get() dans une méthode de VueJS appelé "created", qui s'exéctue au chargement de la page. 
